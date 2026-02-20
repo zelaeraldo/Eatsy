@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Product</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Create a New Product</h1>
+        <p>Fill out the form below to add a new product to the menu.</p>
+    </header>
+
+    <main>
+        <form action="/products/create" method="post" class="product-form">
+            <div class="form-group">
+                <label for="name">Product Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter the product name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" placeholder="Enter a short description" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="price" step="0.01" placeholder="Enter the price" required>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-submit">Create Product</button>
+                <a href="/products" class="btn-cancel">Cancel</a>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Eatsy</p>
+    </footer>
+</body>
+</html>

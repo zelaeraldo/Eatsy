@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Order</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Create New Order</h1>
+        <p>Fill in the details below to create a new order.</p>
+    </header>
+
+    <main>
+        <section class="create-order-form">
+            <form action="/orders" method="POST">
+                <label for="customer-name">Customer Name:</label>
+                <input type="text" id="customer-name" name="customer_name" required>
+
+                <label for="order-date">Order Date:</label>
+                <input type="date" id="order-date" name="order_date" required>
+
+                <label for="order-status">Order Status:</label>
+                <select id="order-status" name="order_status" required>
+                    <option value="Processing">Processing</option>
+                    <option value="Shipped">Shipped</option>
+                    <option value="Delivered">Delivered</option>
+                </select>
+
+                <button type="submit" class="btn-submit">Create Order</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Eatsy</p>
+    </footer>
+</body>
+</html>

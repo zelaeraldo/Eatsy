@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Orders List</h1>
+        <p>Here are the orders placed by customers.</p>
+    </header>
+
+    <main>
+        <section class="order-list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Përsërit këtu për secilën porosi -->
+                    <tr>
+                        <td>101</td>
+                        <td>John Doe</td>
+                        <td>2025-01-22</td>
+                        <td>Shipped</td>
+                        <td>
+                            <a href="/orders/edit/101" class="btn-edit">Edit</a>
+                            <a href="/orders/delete/101" class="btn-delete">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>Jane Smith</td>
+                        <td>2025-01-21</td>
+                        <td>Processing</td>
+                        <td>
+                            <a href="/orders/edit/102" class="btn-edit">Edit</a>
+                            <a href="/orders/delete/102" class="btn-delete">Delete</a>
+                        </td>
+                    </tr>
+                    <!-- Mbaron këtu -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="add-order">
+            <a href="/orders/create" class="btn-add">Add New Order</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Eatsy</p>
+    </footer>
+</body>
+</html>

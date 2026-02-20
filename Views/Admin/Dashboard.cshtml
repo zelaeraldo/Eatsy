@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Admin Dashboard";
+}
+
+<h2>Paneli i Admin</h2>
+<p>Mirësevini, administratori!</p>
+
+
+<h1>Admin Dashboard</h1>
+<p>Total Users: @ViewBag.TotalUsers</p>
+<p>Total Orders: @ViewBag.TotalOrders</p>
+<p>Total Restaurants: @ViewBag.TotalRestaurants</p>
+
+<a href="/Admin/ManageUsers">Manage Users</a>
+<a href="/Admin/ManageRestaurants">Manage Restaurants</a>
+<a href="/Admin/ManageOrders">Manage Orders</a>

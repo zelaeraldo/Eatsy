@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Order</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Delete Order</h1>
+        <p>Are you sure you want to delete this order?</p>
+    </header>
+
+    <main>
+        <section class="delete-order-confirmation">
+            <h2>Order ID: 12345</h2>
+            <p>Status: Pending</p>
+            <p>Order Date: 2025-01-15</p>
+
+            <form action="/orders/delete/1" method="POST">
+                <button type="submit" class="btn-delete-confirm">Yes, Delete</button>
+                <a href="/orders" class="btn-cancel">Cancel</a>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Eatsy</p>
+    </footer>
+</body>
+</html>

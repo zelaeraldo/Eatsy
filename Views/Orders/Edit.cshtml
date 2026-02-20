@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Order</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Edit Order</h1>
+        <p>Modify the details of the selected order.</p>
+    </header>
+
+    <main>
+        <section class="edit-order-form">
+            <form action="/orders/update/1" method="POST">
+                <label for="order-id">Order ID:</label>
+                <input type="text" id="order-id" name="order_id" value="12345" disabled>
+
+                <label for="order-status">Order Status:</label>
+                <select id="order-status" name="order_status">
+                    <option value="pending" selected>Pending</option>
+                    <option value="processing">Processing</option>
+                    <option value="completed">Completed</option>
+                </select>
+
+                <label for="order-date">Order Date:</label>
+                <input type="date" id="order-date" name="order_date" value="2025-01-15" required>
+
+                <button type="submit" class="btn-submit">Update Order</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Eatsy</p>
+    </footer>
+</body>
+</html>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

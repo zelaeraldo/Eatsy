@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Create a New Restaurant</h1>
+        <p>Fill out the form to add a new restaurant to the list!</p>
+    </header>
+
+    <main>
+        <form action="/restaurants/create" method="post" class="restaurant-form">
+            <div class="form-group">
+                <label for="name">Restaurant Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter the name of the restaurant" required>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" placeholder="Enter a short description" required></textarea>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-submit">Create Restaurant</button>
+                <a href="/restaurants" class="btn-cancel">Cancel</a>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Eatsy</p>
+    </footer>
+</body>
+</html>
